@@ -8,7 +8,8 @@ import {
   CreateAccountPage,
   EmailConfirmationLanderPage,
   SignInPage,
-  ProtectedRoute
+  ProtectedRoute,
+  useAuth
 } from '../auth';
 import { ReservationsListPage } from '../reservations';
 import {
@@ -38,9 +39,9 @@ export function App() {
         <Route path='/sign-in'>
           <SignInPage />
         </Route>
-        <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/create-account'>
+        <Route  path='/create-account'>
           <CreateAccountPage />
-        </ProtectedRoute>
+        </Route>
         <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/edit-profile'>
           <EditProfilePage />
         </ProtectedRoute>
