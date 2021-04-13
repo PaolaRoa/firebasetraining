@@ -8,6 +8,8 @@ import firebase from 'firebase/app'
 import 'firebase/analytics';
 //importing firebase auth
 import 'firebase/auth'
+//importing firestore
+import 'firebase/firestore';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
